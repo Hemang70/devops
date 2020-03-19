@@ -1,0 +1,89 @@
+<html>
+
+
+<head>
+  <style>
+  /* Styling for first form*/
+  .block
+  {
+  width:50%;
+  padding:10px;
+  margin-left:25%;
+  border:3px solid #4db8ff;
+  box-shadow: 2px 2px 5px #b3e0ff;
+  border-radius:5px;
+  font-size:20px;
+  }
+
+  #dvCourse
+  {
+    align-items: center;
+    margin: auto;
+  }
+
+  .button {
+
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+  }
+  </style>
+</head>
+<body>
+  <div style="width:500px;">
+  <table border="0" cellpadding="10" cellspacing="1" width="500" class="tblListForm">
+
+    <th class="listheader">
+      <td>Course</td>
+      <td>Experience Course</td>
+    </th>
+
+    <tr>
+      <td><input type="checkbox" id="chkcourse" onclick="ShowHideDiv(this)"/</td>
+      <td>Java Advance</td>
+      <td>Java Fundamental</td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" id="chkcourse" onclick="ShowHideDiv(this)"/</td>
+      <td>Python Advance</td>
+      <td>Python Basics</td>
+    </tr>
+
+    <tr>
+      <td><input type="checkbox" id="chkcourse" onclick="ShowHideDiv(this)"/</td>
+      <td>Advance ML</td>
+      <td>Fundamentals of ML</td>
+    </tr>
+
+  </table>
+</div>
+
+<div id="dvcourse" style="display: none" >
+    Do You have an Experience for selected course ?
+    <br><br>
+    <button class ="button" onclick="ShowProof()" />Yes</button>
+    <br>
+    <button class ="button" onclick="no()">No</button>
+</div>
+
+<div id="yes" style="display:none" >
+  <form action="">
+    <label for="cname">Council Name:</label>
+    <input type="text" name="cname" id="cname" required >
+    <label for="myfile">Upload a Proof:</label>
+    <input type="file" id="myfile" name="myfile"><br><br>
+    <input type="submit">
+  </form>
+</div>
+
+</body>
+<html>
